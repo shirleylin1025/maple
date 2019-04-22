@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">mapleStorym</string>
+    <string name="physicalAttack">物理攻擊力</string>
+    <string name="physicalAttackIncrease">物理攻擊力增加&#040;&#037;&#041;</string>
+    <string name="physicalDamageIncrease">物理傷害增加&#040;&#037;&#041;</string>
+    <string name="magicAttack">魔法攻擊力</string>
+    <string name="magicAttackIncrease">魔法攻擊力增加&#040;&#037;&#041;</string>
+    <string name="magicDamageIncrease">魔法傷害增加&#040;&#037;&#041;</string>
+    <string name="bossAttackIncrease">Boss攻擊力增加&#040;&#037;&#041;</string>
+    <string name="playerAttackIncrease">角色攻擊力增加&#040;&#037;&#041;</string>
+
+</resources>
