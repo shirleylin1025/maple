@@ -44,8 +44,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalAttack_textView"
                 android:ems="10"
-                android:inputType="number"
-                />
+                android:inputType="textPersonName"/>
 
         </RelativeLayout>
 
@@ -71,8 +70,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalAttackIncrease_textView"
                 android:ems="10"
-                android:inputType="number|numberDecimal"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -97,8 +95,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalDamgeIncrease_textView"
                 android:ems="10"
-                android:inputType="number|numberDecimal"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -123,8 +120,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/bossAttackIncrease_textView"
                 android:ems="10"
-                android:inputType="number|numberDecimal"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -149,8 +145,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/playerAttackIncrease_textView"
                 android:ems="10"
-                android:inputType="number|numberDecimal"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -175,8 +170,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/critRate_textView"
                 android:ems="10"
-                android:inputType="number|numberDecimal"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -201,8 +195,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/critAttack_textView"
                 android:ems="10"
-                android:inputType="number"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -227,8 +220,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/critDamage_textView"
                 android:ems="10"
-                android:inputType="number|numberDecimal"
-                />
+                android:inputType="textPersonName"/>
         </RelativeLayout>
 
     </LinearLayout>
