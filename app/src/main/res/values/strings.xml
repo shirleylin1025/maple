@@ -6,8 +6,9 @@
     <string name="magicAttack">魔法攻擊力</string>
     <string name="magicAttackIncrease">魔法攻擊力增加&#040;&#037;&#041;</string>
     <string name="magicDamageIncrease">魔法傷害增加&#040;&#037;&#041;</string>
-    <string name="bossAttackIncrease">Boss攻擊力增加&#040;&#037;&#041;</string>
+    <string name="playerAttackIncrease">角色攻擊力增加&#040;&#037;&#041;</string>
     <string name="critRate">致命攻擊率&#040;&#037;&#041;</string>
     <string name="critAttack">致命攻擊</string>
     <string name="critDamage">致命攻擊傷害&#040;&#037;&#041;</string>
+    <string name="bossAttackIncrease">Boss攻擊力增加&#040;&#037;&#041;</string>
 </resources>
