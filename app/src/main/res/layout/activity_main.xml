@@ -223,6 +223,32 @@
                 android:inputType="textPersonName"/>
         </RelativeLayout>
 
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/expectedValue_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/expectedValue"
+                android:textSize="15dp"
+                />
+        </RelativeLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
