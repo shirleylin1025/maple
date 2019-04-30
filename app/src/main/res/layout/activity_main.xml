@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/layout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="495dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -69,6 +69,156 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalAttackIncrease_textView"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/physicalDamgeIncrease_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/physicalDamageIncrease"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/physicalDamageIncrease_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/physicalDamgeIncrease_textView"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/bossAttackIncrease_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/bossAttackIncrease"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/bossAttackIncrease_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/bossAttackIncrease_textView"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/playerAttackIncrease_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/playerAttackIncrease"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/playerAttackIncrease_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/playerAttackIncrease_textView"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/critRate_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/critRate"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/critRate_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/critRate_textView"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/critAttack_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/critAttack"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/critAttack_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/critAttack_textView"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/critDamage_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/critDamage"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/critDamage_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/critDamage_textView"
                 android:ems="10"
                 android:inputType="textPersonName"/>
         </RelativeLayout>
