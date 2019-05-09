@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private double critRate;
     private double critDamge;
     private double skillDamge;
-    private TextView mPhysicalAttackTextView;
+    private TextView mExpectedValue_textView;
     private EditText mPhysicalAttackText, mPhysicalAttackIncreaseText, mPhysicalDamageIncreaseText, mMagicAttackText, mMagicAttackIncreaseText, mMagicDamageIncreaseText,
             mBossAttackIncreaseText,
             mPlayerAttackIncrease,
@@ -65,6 +65,17 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("physicalDamageIncrease:", physicalDamageIncrease + "");
                 }
 
+                if ("".equals(mBossAttackIncreaseText.getText().toString().trim())) {
+                    bossAttackIncrease = 0;
+                } else {
+                    bossAttackIncrease = (Double.parseDouble(mBossAttackIncreaseText.getText().toString())) * 0.01;
+                    String.format("%.1f", bossAttackIncrease);
+                    bossAttackIncrease++;
+                    Log.e("bossAttackIncrease:", bossAttackIncrease + "");
+                }
+
+
+
                 if ("".equals(mCritRate.getText().toString().trim())) {
                     critRate = 0;
                 } else {
@@ -99,8 +110,10 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 mfinal = ((1 - critRate) * (physicalAttack * physicalAttackIncrease * skillDamge) + critRate * ((physicalAttack + critAttack) * physicalAttackIncrease * critDamge * skillDamge)) * physicalDamageIncrease;
-                
+
                 Log.e("value:", mfinal + "");
+
+                mExpectedValue_textView.setText(getString(R.string.expectedValue)+mfinal+"");
             }
         });
 
@@ -108,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void findView() {
         mPhysicalAttackText = (EditText) findViewById(R.id.physicalAttack_editText);
-        mPhysicalAttackTextView = (TextView) findViewById(R.id.physicalAttack_textView);
+        mExpectedValue_textView= (TextView) findViewById(R.id.expectedValue_textView);
         mPhysicalAttackIncreaseText = (EditText) findViewById(R.id.physicalAttackIncrease_editText);
         mPhysicalDamageIncreaseText = (EditText) findViewById(R.id.physicalDamageIncrease_editText);
         mBossAttackIncreaseText = (EditText) findViewById(R.id.bossAttackIncrease_editText);
