@@ -44,7 +44,8 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalAttack_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number"
+                />
 
         </RelativeLayout>
 
@@ -70,7 +71,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalAttackIncrease_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number|numberDecimal"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -95,7 +96,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/physicalDamgeIncrease_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number|numberDecimal"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -120,7 +121,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/bossAttackIncrease_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number|numberDecimal"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -145,7 +146,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/playerAttackIncrease_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number|numberDecimal"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -170,7 +171,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/critRate_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number|numberDecimal"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -195,7 +196,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/critAttack_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -220,7 +221,7 @@
                 android:layout_marginStart="37dp"
                 android:layout_toEndOf="@+id/critDamage_textView"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="number|numberDecimal"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -252,8 +253,9 @@
 
             android:layout_width="match_parent"
             android:layout_height="40dp">
+
             <Button
-                android:id="@+id/button"
+                android:id="@+id/submit_botton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SUBMIT"/>
