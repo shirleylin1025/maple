@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
     private double playerAttackIncrease;
     private double critRate;
     private double critDamge;
+    private double skillDamge;
     private TextView mPhysicalAttackTextView;
     private EditText mPhysicalAttackText, mPhysicalAttackIncreaseText, mPhysicalDamageIncreaseText, mMagicAttackText, mMagicAttackIncreaseText, mMagicDamageIncreaseText,
             mBossAttackIncreaseText,
             mPlayerAttackIncrease,
-            mCritRate, mCritAttack, mCritDamge;
+            mCritRate, mCritAttack, mCritDamge,
+            mSkillDamageText;
     private Button mSubmitBotton;
 
     private double mfinal;
@@ -42,46 +44,62 @@ public class MainActivity extends AppCompatActivity {
                     physicalAttack = 0;
                 } else {
                     physicalAttack = Integer.parseInt(mPhysicalAttackText.getText().toString());
+                    Log.e("physicalAttack:", physicalAttack + "");
                 }
 
                 if ("".equals(mPhysicalAttackIncreaseText.getText().toString().trim())) {
                     physicalAttackIncrease = 0;
                 } else {
-                    physicalAttackIncrease = (Double.parseDouble(mPhysicalAttackIncreaseText.getText().toString())) * 1;
+                    physicalAttackIncrease = (Double.parseDouble(mPhysicalAttackIncreaseText.getText().toString())) * 0.01;
                     String.format("%.1f", physicalAttackIncrease);
                     physicalAttackIncrease++;
+                    Log.e("physicalAttackIN:", physicalAttackIncrease + "");
+                }
+
+                if ("".equals(mPhysicalDamageIncreaseText.getText().toString().trim())) {
+                    physicalDamageIncrease = 0;
+                } else {
+                    physicalDamageIncrease = (Double.parseDouble(mPhysicalDamageIncreaseText.getText().toString())) * 0.01;
+                    String.format("%.1f", physicalDamageIncrease);
+                    physicalDamageIncrease++;
+                    Log.e("physicalDamageIncrease:", physicalDamageIncrease + "");
                 }
 
                 if ("".equals(mCritRate.getText().toString().trim())) {
                     critRate = 0;
                 } else {
                     critRate = (Double.parseDouble(mCritRate.getText().toString())) * 0.01;
-                    String.format("%.1f", critRate);
+                    String.format("%.2f", critRate);
+                    Log.e("critRate:", critRate + "");
                 }
 
                 if ("".equals(mCritAttack.getText().toString().trim())) {
                     critAttack = 0;
                 } else {
-                    critAttack = Integer.parseInt(mPhysicalAttackText.getText().toString());
+                    critAttack = Integer.parseInt(mCritAttack.getText().toString());
+                    Log.e("critAttack:", critAttack + "");
                 }
 
                 if ("".equals(mCritDamge.getText().toString().trim())) {
                     critDamge = 0;
                 } else {
-                    critDamge = (Double.parseDouble(mCritDamge.getText().toString())) * 1;
-                    String.format("%.1f", critDamge);
+                    critDamge = (Double.parseDouble(mCritDamge.getText().toString())) * 0.01;
+                    String.format("%.2f", critDamge);
                     critDamge++;
+                    Log.e("critDamge", critDamge + "");
                 }
 
-                //physicalDamageIncrease = (Double.parseDouble(mPhysicalDamageIncreaseText.getText().toString()))*0.01;
-                // ((1-致命攻擊率%) x (物理攻擊力 x 物理攻擊力% x 技能傷害) +致命攻擊率 x
-                //        [(物理攻擊力 + 致命攻擊) x 物理攻擊力% x 致命攻擊傷害% x 技能傷害]) x 物理傷害增加%
+                if ("".equals(mSkillDamageText.getText().toString().trim())) {
+                    skillDamge = 0;
+                } else {
+                    skillDamge = (Double.parseDouble(mSkillDamageText.getText().toString())) * 0.01;
+                    String.format("%.1f", skillDamge);
+                    Log.e("skill:", skillDamge + "");
 
-                //mfinal = ((1-critRate)*(physicalAttack*physicalAttackIncrease*2.112)+critRate*((physicalAttack+critAttack)*physicalAttackIncrease*critDamge
-                //*2.112))*physicalDamageIncrease;
-                /*mfinal = ((1 - 0.101) * (2471 * 1.13 * 2.112) + 0.101 * ((2471 + 59) * 1.13 * 1.4
-                        * 2.112)) * 1.15;*/
+                }
 
+                mfinal = ((1 - critRate) * (physicalAttack * physicalAttackIncrease * skillDamge) + critRate * ((physicalAttack + critAttack) * physicalAttackIncrease * critDamge * skillDamge)) * physicalDamageIncrease;
+                
                 Log.e("value:", mfinal + "");
             }
         });
@@ -98,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         mCritRate = (EditText) findViewById(R.id.critRate_editText);
         mCritAttack = (EditText) findViewById(R.id.critAttack_editText);
         mCritDamge = (EditText) findViewById(R.id.critDamage_editText);
+        mSkillDamageText = (EditText) findViewById(R.id.skillDamage_editText);
         mSubmitBotton = (Button) findViewById(R.id.submit_botton);
 
     }
