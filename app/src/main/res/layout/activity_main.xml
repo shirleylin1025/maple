@@ -224,6 +224,31 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/skillDamage_textView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/critDamage"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/skillDamage_editText"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_toEndOf="@+id/skillDamage_textView"
+                android:ems="10"
+                android:inputType="number|numberDecimal"/>
+        </RelativeLayout>
+
+        <RelativeLayout
 
             android:layout_width="match_parent"
             android:layout_height="40dp">
